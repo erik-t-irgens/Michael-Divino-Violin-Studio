@@ -1,3 +1,58 @@
+# Michael Divino Violin Studio Website
+
+#### _This application is intended to provide Michael Divino with a violin studio solution to provide information, allow scheduling, and otherwise market for Michael's Violin Studio._
+
+#### _By **Erik Irgens**_
+
+## Description
+
+This application is designed to accomplish the following, in short:
+
+1. Create a website for Michael Divino's Violin Studio
+2. Provide information for prospective and current student
+3. Allow for current and prospective students to schedule lessons and appointments with Michael
+4. Provide portals for students to submit payments.
+
+## Component Tree Hierarchy
+
+![Component Tree Diagram](/src/media/michael-divino-component-tree.svg)
+
+### Component definitions:
+
+1. HEADER - Navigation bar and Title section (MICHAEL DIVINO signature).
+    * Navbar - Contains buttons and hamburger for navigational purposes
+        * Hamburger - Appears when viewport is smaller than readable width of navbar (responsive), and can be toggled
+        * Navbutton - Navigational buttons with section titles and router navigation.
+        * Title - Michael's signature, appears when Hamburger is toggled off.
+2. INDEX "/" - Contains main page content sections
+    * ABOUT - Landing section with a portrait and introductory foreword.
+        * MEDIA-BLOCK
+        * SECTION
+        * TITLE
+    * THE STUDIO - 
+    * MEDIA - Section that holds media of Michael and Studio's performances. 
+        * MEDIA-BLOCK
+        * SECTION
+        * TITLE
+    * PRICING - Contains pricing information about lessons
+        * NOTIFIER - COVID-19 update information
+        * SECTION
+        * TITLE
+        * PRICING TABLE - Table that compares prices between the two package types
+            * MONTHLY - Monthly prices ($/lesson)
+            * INDIVIDUAL - Individual session price ($/lesson)
+    * CONTACT - Contact Michael Divino directly with inquiries
+        * SECTION
+        * TITLE
+        * FORM
+        * INPUT
+3. SCHEDULE "/schedule" - Page dedicated to scheduling lessons via widget
+    * 10to8 WIDGET - Fullpage interactable scheduling software handled through the 10to8 API.
+4. RESOURCES "/resources" - Extra resources for students
+    * LIST 
+        * LIST ITEM - Title of the resourcs (Metronomes, local opportunities, local string replacements, repairs, shops, sheet music, etc.)
+        * EXPANDABLE INFO - A modal that contains more information pertaining to LIST ITEM
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
