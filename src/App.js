@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Try to implement some sort of hash router/history that allows for sections to be linked to and scrolled to automatically. https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
+
 function App() {
   return (
     <div className="App">
