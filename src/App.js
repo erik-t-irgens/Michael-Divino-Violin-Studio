@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< Updated upstream
 import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import React, { Component } from "react";
@@ -30,6 +31,11 @@ class App extends Component {
       </div>
     )
   }
+=======
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+// Looking to implement some sort of hash router updater when a section has been scrolled into view, or at least when a link is given to a section, it will lead you there. Here's a solution I found. Hi future Erik! https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
+>>>>>>> Stashed changes
 
 }
 
